@@ -1,0 +1,480 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text-color: rgb(34,19,20);
+    --second-color: rgb(90,113,132);
+    --main-color: rgb(110,84,250); 
+    --big-font: 96px;
+    --h2-font: 32px;
+    --p-font: 18px;
+}
+
+body {
+    background-color: white;
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 18%;
+    transition: ease .40s;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgba(87, 85, 85, 0.2);
+    border-radius: 4px;
+}
+
+header i {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 80px 18%;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    opacity: 0.;
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    line-height: 1.2;
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px ;
+}
+
+.home-text p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 50px;
+}
+
+.home-btn {
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 30px;
+    background: white;
+    color: var(--main-color);
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.home-btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+.text h2 {
+    font-size: var(--h2-font);
+    line-height: 1.1;
+}
+
+.row-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 32px;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container-box {
+    background-color: white;
+    border: 1px solid rgb(240, 237, 237);
+    padding: 50px 10px;
+    border-radius: 4px;
+    transition: all 1s ease 0s;
+}
+
+.container-img img {
+    height: 85px;
+    width: 85px;
+    padding: 15px;
+    background: white;
+    box-shadow: 5px 10px 30px rgba(87, 85, 85, 0.2);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.container-box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.container-box h4 p {
+    font-size: 15px;
+    color: var(--second-color);
+}
+
+.container-box:hover {
+    box-shadow: 5px 30px 56px rgba(55, 55, 55, 0.12);
+    border: 1px solid transparent;
+    transform: translateY(-3px);
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    font-size: var(--h2-font);
+    line-height: 1.2;
+}
+
+.package-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 32px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.thum {
+    position: relative;
+    transition: all .3s;
+    cursor: pointer; 
+}
+
+.thum img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.thum h3 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: right;
+    color: slategrey;
+    top: 36px;
+    right: 40px;
+}
+
+.dest-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.stars i {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.location h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.location p {
+    font-size: 15px;
+    color: var(--second-color);
+}
+
+.thum:hover {
+    transform: scale(1.04);
+    transition-duration: 1s;
+}
+
+.destination-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    grid-gap: 32px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.col-content {
+    position: relative;
+}
+
+.col-content img {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.col-content h5 {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 500;
+    color: whitesmoke;
+    left: 15px;
+    bottom: 60px;
+}
+
+.col-content p {
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    left: 15px;
+    bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.col-content img:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+    transition-duration: .6s;
+}
+
+.dest-text {
+    background-color: rgba(87, 85, 85, 0.2);
+}
+
+.subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.news-text h2 {
+    font-size: var(--h2-font);
+    margin-bottom: 5px;
+}
+
+.news-text p {
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 30px;
+}
+
+.subscribe form {
+    max-width: 100%;
+    width: 450px;
+    position: relative;
+}
+
+.subscribe form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 150px 20px 30px;
+    box-shadow: 5px 10px 30px rgba(87, 85, 85, 0.2);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.subscribe form input:last-child {
+    display: inline-block;
+    position: absolute;
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 15px;
+    background: var(--main-color);
+    color: white;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+#contact {
+    background: var(--main-color);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 25px 0;
+}
+
+.list {
+    width: 25%;
+}
+
+.list h4 {
+    font-size: 21px;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.list ul li:not(last-child) {
+    margin-bottom: 16px;
+}
+
+.list ul li a {
+    color: #ffffffbf;
+    font-size: var(--p-font);
+    display: block;
+    transition: .3s;
+}
+
+.list ul li a:hover {
+    color: bisque;
+    transform: translateX(10px);
+}
+
+.social a {
+    height: 40px;
+    width: 40px;
+    background: white;
+    color: var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border-radius: 15px;
+    transition: .3s;
+    margin-right: 10px;
+}
+
+.list .social a:hover {
+    transform: scale(1.1);
+}
+
+.end-text {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.end-text p {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1400px) {
+    header{
+        padding: 10px 3%;
+        transition: .2s;
+    }
+    section{
+        padding: 70px 10%;
+        transition: .2s;
+    }
+    :root {
+        --big-font: 72px;
+        --h2-font: 36px;
+        --p-font: 16px;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1040px) {
+    .bx .bx-menu {
+        display: block;
+        color: var(--text-color);
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 270px;
+        height: 120vh;
+        background: rgb(16, 104, 204);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 30px;
+        transition: 0.5s all;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 19px 0;
+        color: white;
+    }
+
+    .navbar a:hover {
+        color: var(--text-color);
+    }
+
+    .list {
+        width: 50%;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .list {
+        width: 100%;
+    }
+
+    .subscribe form{
+        width: 350px;
+    }
+
+    :root {
+        --big-font: 60px;
+        --h2-font: 29px;
+        transition: .2s;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .home {
+        height: 85vh;
+        transition: .2s;
+    }
+}
